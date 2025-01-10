@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <!DOCTYPE html>
+<html lang="cn">
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  
+  <title>LIHAI‘s周报 2025-01-10 - lihai&#39;s blog</title>
+  <link rel="icon" href="https://raw.githubusercontent.com/Leviathan1995/hexo-theme-polk-x/master/google.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  
+  <meta name="keywords" content=周报, 科技, 生活>
+  
+  
+  
+    <link rel="alternate" href="/atom.xml " title="lihai&#39;s blog" type="application/atom+xml">
+  
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+  <div class="blog-title">
+    <a href="/" class="logo">lihai&#39;s blog</a>
+    <div class="subtitle">一个有点懒的程序员</div>
+  </div>
+  <nav class="navbar">
+    <ul class="menu">
+      
+        <li class="menu-item">
+          <a href="/" class="menu-item-link">Home</a>
+        </li>
+      
+        <li class="menu-item">
+          <a href="/summary" class="menu-item-link">Summary</a>
+        </li>
+      
+        <li class="menu-item">
+          <a href="/about" class="menu-item-link">About</a>
+        </li>
+      
+        <li class="menu-item">
+          <a href="/atom.xml" class="menu-item-link">RSS</a>
+        </li>
+      
+    </ul>
+  </nav>
+</header>
+
+<article class="post">
+  <div class="post-title">
+    <h1 class="article-title">LIHAI‘s周报 2025-01-10</h1>
+  </div>
+
+  <!-- 文章目录 -->
+  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A4%A7%E8%A7%84%E6%A8%A1%E7%B3%BB%E7%BB%9F%E5%A6%82%E4%BD%95%E5%BC%80%E5%8F%91%EF%BC%8C%E6%9C%89%E5%93%AA%E4%BA%9B%E5%8E%9F%E5%88%99%EF%BC%9F"><span class="toc-text">大规模系统如何开发，有哪些原则？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9D%A5%EF%BC%81%E6%8A%98%E8%85%BE%E4%B8%80%E4%B8%8BWindows3-x"><span class="toc-text">来！折腾一下Windows3.x</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%AF%E4%BB%A5%E6%97%A0%E7%97%9B%E6%B5%8B%E8%A1%80%E7%B3%96%E4%BA%86"><span class="toc-text">可以无痛测血糖了</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BD%93%E4%BD%A0%E6%8C%81%E7%BB%AD%E8%AE%A9AI%E5%86%99%E6%9B%B4%E5%A5%BD%E8%80%8C%E4%BB%A3%E7%A0%81"><span class="toc-text">当你持续让AI写更好而代码</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E4%B8%AA%E8%83%BD%E7%8E%A9%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97%E7%9A%84pdf%E6%96%87%E4%BB%B6"><span class="toc-text">一个能玩俄罗斯方块的pdf文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ASIC-%E7%BD%91%E9%A1%B5%E7%89%88%E4%BB%BF%E7%9C%9F"><span class="toc-text">ASIC 网页版仿真</span></a></li></ol>
+
+  <div class="post-content">
+    <h1 id="大规模系统如何开发，有哪些原则？"><a href="#大规模系统如何开发，有哪些原则？" class="headerlink" title="大规模系统如何开发，有哪些原则？"></a>大规模系统如何开发，有哪些原则？</h1><p><a target="_blank" rel="noopener" href="https://www.seangoedecke.com/large-established-codebases/">large-established-codebases</a></p>
+<p><em>Summary</em></p>
+<ul>
+<li>Large codebases are worth working in because they usually pay your salary</li>
+<li>By far the most important thing is consistency</li>
+<li>Never start a feature without first researching prior art in the codebase</li>
+<li>If you don’t follow existing patterns, you better have a very good reason for it</li>
+<li>Understand the production footprint of the codebase</li>
+<li>Don’t expect to be able to test every case - instead, rely on monitoring</li>
+<li>Remove code any chance you get, but be very careful about it</li>
+<li>Make it as easy as possible for domain experts to catch your mistakes</li>
+</ul>
+<h1 id="来！折腾一下Windows3-x"><a href="#来！折腾一下Windows3-x" class="headerlink" title="来！折腾一下Windows3.x"></a>来！折腾一下Windows3.x</h1><p><a target="_blank" rel="noopener" href="https://wuffs.org/blog/windows-3x-graphics">windows-3x-graphics</a></p>
+<p>旧硬件的好处就是，可以让你了解很多你本不需要知道的东西。</p>
+<p>Wherein I learn too much about VGA hardware and generate some really cool glitch art while I try to fix somebody else’s fix for a video driver that’s older than I am.</p>
+<h1 id="可以无痛测血糖了"><a href="#可以无痛测血糖了" class="headerlink" title="可以无痛测血糖了"></a>可以无痛测血糖了</h1><p><a target="_blank" rel="noopener" href="https://uwaterloo.ca/news/media/no-more-needles-tracking-blood-sugar-your-wrist">no-more-needles-tracking-blood-sugar-your-wrist</a></p>
+<p>University of Waterloo engineers have achieved this technological feat to help people faced with chronic health problems such as diabetes monitor their glucose levels.</p>
+<h1 id="当你持续让AI写更好而代码"><a href="#当你持续让AI写更好而代码" class="headerlink" title="当你持续让AI写更好而代码"></a>当你持续让AI写更好而代码</h1><p><a target="_blank" rel="noopener" href="https://minimaxir.com/2025/01/write-better-code/">keep telling AI to write better code.</a></p>
+<p>What would happen if we tried a similar technique with code? LLM-generated code is unlikely to be slop (although not impossible) as it follows strict rules, and unlike creative outputs such as images, code quality can be measured more objectively.</p>
+<h1 id="一个能玩俄罗斯方块的pdf文件"><a href="#一个能玩俄罗斯方块的pdf文件" class="headerlink" title="一个能玩俄罗斯方块的pdf文件"></a>一个能玩俄罗斯方块的pdf文件</h1><p><a target="_blank" rel="noopener" href="https://th0mas.nl/downloads/pdftris.pdf">pdftris.pdf</a></p>
+<p>现在知道PDF文件有多危险了吧。</p>
+<h1 id="ASIC-网页版仿真"><a href="#ASIC-网页版仿真" class="headerlink" title="ASIC 网页版仿真"></a>ASIC 网页版仿真</h1><p><a target="_blank" rel="noopener" href="https://znah.net/tt09/">This is a gate-level simulation</a></p>
+<p>This is a gate-level simulation of my <a target="_blank" rel="noopener" href="https://tinytapeout.com/">TinyTapeout</a> ‘09 submission running directly in your browser. The circuit occupies a single 160x100 μm tile on a multiproject chip and generates a 60fps 640x480 VGA signal that forms a scrolling animation of several <a target="_blank" rel="noopener" href="https://mathworld.wolfram.com/ElementaryCellularAutomaton.html">elementary 1D cellular automata</a> rules. Most of the tile area is occupied by two 160-bit shift registers: one (left) stores the current image line, while another (right) stores the first line of the next frame (4th line of the current).</p>
+
+  </div>
+  <div class="post-meta">
+  </div>
+
+  <div class="post-footer">
+    <span class="post-time" style="color:#646060;font-size:13px">2025-01-10</span>
+    <a href="#top" class="top">Back to Top</a>
+  </div>
+</article>
+
+<!-- 评论插件 -->
+
+<footer>
+  © 2018-2025
+  <span class="author">
+    LiHai Zhou
+  </span>
+</footer>
+
+
+    </div>
+  </body>
+</html>
